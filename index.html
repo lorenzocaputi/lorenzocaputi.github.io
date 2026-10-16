@@ -24,12 +24,11 @@ h2{margin:0;padding-bottom:10px;border-bottom:1px solid var(--rule);font-size:22
 .intro-row{display:flex;flex-wrap:wrap;align-items:flex-start;gap:32px 48px}
 .intro-text{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px}
 .intro-text p{margin:0}
+.intro-text ol{margin:0;padding-left:28px;list-style-type:lower-roman}
+.intro-text li{padding-left:4px}
+.intro-text li+li{margin-top:10px}
 .links{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:16px}
 .portrait{flex:0 0 200px;width:200px;height:250px;object-fit:cover;object-position:center;display:block;background:#f2f2f0}
-.updates{gap:20px}
-.update{display:flex;flex-wrap:wrap;gap:0 24px}
-.update .mono{flex:0 0 88px;padding-top:6px}
-.update p{flex:1 1 300px;min-width:0;margin:0}
 .pubs{gap:28px}
 .pub{display:flex;flex-direction:column;gap:4px}
 .pub-title{font-size:19px;font-weight:500;line-height:1.4}
@@ -52,7 +51,14 @@ h2{margin:0;padding-bottom:10px;border-bottom:1px solid var(--rule);font-size:22
 <h1>Lorenzo Caputi</h1>
 <div class="intro-row">
 <div class="intro-text">
-<p>I'm an MS student in Statistics at Stanford and a graduate researcher at MIT with Prof. Dimitris Bertsimas. I work on autonomous research: AI systems that create new scientific knowledge. I study whether RL post-training can teach them research taste, and how to best use test-time compute to explore open problems. Before this, I studied Computer Science and Economics at Bocconi and wrote my thesis at Harvard with Prof. Tomer Ullman. I also co-founded <a href="https://bainsa.ai/">BAINSA</a>, Italy's largest student-run AI research lab.</p>
+<p>I'm an MS student in Statistics at Stanford and a graduate researcher at MIT with Prof. Dimitris Bertsimas. Before this, I studied Computer Science and Economics at Bocconi and wrote my thesis at Harvard with Prof. Tomer Ullman. I also co-founded <a href="https://bainsa.ai/">BAINSA</a>, Italy's largest student-run AI research lab.</p>
+<p>In my research, I work on what I think is the most important scientific problem of our time: building intelligent systems that create new scientific knowledge, autonomously and safely. More specifically, I am interested in these research questions:</p>
+<ol>
+<li>How can we teach a language model "research taste" using signal from its own exploration?</li>
+<li>How can we best use test-time compute to efficiently explore the space of text-based solutions to open scientific problems? For example, through evolutionary search or test-time learning.</li>
+<li>How can we reliably use these methods to solve high-impact open problems in science and industrial R&amp;D?</li>
+</ol>
+<p>If you are interested in these topics, feel free to <a href="mailto:lcaputi@stanford.edu">email me</a> for a chat or a potential collaboration.</p>
 <nav class="links" aria-label="Contact">
 <a href="mailto:lcaputi@stanford.edu">Email</a>
 <a href="https://scholar.google.com/citations?user=NMvmB68AAAAJ&amp;hl=en">Google Scholar</a>
@@ -62,13 +68,6 @@ h2{margin:0;padding-bottom:10px;border-bottom:1px solid var(--rule);font-size:22
 </div>
 <img class="portrait" src="portrait.jpg" alt="Portrait of Lorenzo Caputi" width="200" height="250">
 </div>
-</section>
-
-<section class="updates">
-<h2>Updates</h2>
-<div class="update"><div class="mono">Sep 2026</div><p>Started the MS in Statistics at Stanford.</p></div>
-<div class="update"><div class="mono">Sep 2026</div><p>Joined Prof. Dimitris Bertsimas's group at MIT as a graduate researcher.</p></div>
-<div class="update"><div class="mono">Jul 2026</div><p>Finished my bachelor's thesis at Harvard with Prof. Tomer Ullman.</p></div>
 </section>
 
 <section class="pubs">
@@ -89,11 +88,11 @@ h2{margin:0;padding-bottom:10px;border-bottom:1px solid var(--rule);font-size:22
 <section class="exp">
 <h2>Experience</h2>
 <article class="job"><div class="job-main"><div class="job-title">Graduate Researcher, MIT</div><div class="job-desc">With Prof. Dimitris Bertsimas. Post-training and test-time training for autonomous research systems.</div></div><div class="mono">2026–present</div></article>
-<article class="job"><div class="job-main"><div class="job-title">Bachelor's Thesis, Harvard University</div><div class="job-desc">With Prof. Tomer Ullman. Object representations in human physical reasoning.</div></div><div class="mono">2026</div></article>
-<article class="job"><div class="job-main"><div class="job-title">ML Research Assistant, Bocconi University</div><div class="job-desc">With Prof. Omiros Papaspiliopoulos. Variational inference for matrix factorization and completion.</div></div><div class="mono">2025</div></article>
-<article class="job"><div class="job-main"><div class="job-title">Software Development Engineer Intern, Amazon</div><div class="job-desc">Retrieval and LLM pipeline for building product widgets from natural language.</div></div><div class="mono">2025</div></article>
-<article class="job"><div class="job-main"><div class="job-title">Robotics Research Intern, Italian Institute of Technology</div><div class="job-desc">With Dr. Arash Ajoudani. Skeleton-based action recognition for human-robot interaction.</div></div><div class="mono">2024</div></article>
-<article class="job"><div class="job-main"><div class="job-title">Co-founder and Chairman, BAINSA</div><div class="job-desc">Italy's first and largest student-run AI research lab, with 100+ researchers.</div></div><div class="mono">2023–present</div></article>
+<article class="job"><div class="job-main"><div class="job-title">Bachelor's Thesis, Harvard University</div><div class="job-desc">With Prof. Tomer Ullman (Computation, Cognition and Development lab). Aligning vision models with human physical reasoning.</div></div><div class="mono">2025–2026</div></article>
+<article class="job"><div class="job-main"><div class="job-title">ML Research Assistant, Bocconi University</div><div class="job-desc">With Prof. Omiros Papaspiliopoulos. Variational inference methods for matrix factorization and completion.</div></div><div class="mono">2025</div></article>
+<article class="job"><div class="job-main"><div class="job-title">Software Development Engineer Intern, Amazon</div><div class="job-desc">Built an internal tool to brainstorm, preview and build product widgets with natural language. Received a full-time offer.</div></div><div class="mono">2025</div></article>
+<article class="job"><div class="job-main"><div class="job-title">Research Fellow (Robotics), Italian Institute of Technology</div><div class="job-desc">With Dr. Arash Ajoudani and Dr. Gökhan Solak. Predicting human pushing and pulling intention and trajectory with adaptive spatial-temporal graph neural networks, to improve human-robot interaction.</div></div><div class="mono">2024</div></article>
+<article class="job"><div class="job-main"><div class="job-title">Co-founder, BAINSA</div><div class="job-desc">Italy's first student-led AI research lab, with 70+ active members across Bocconi, Sapienza and Polimi. Research projects with companies and professors, weekly paper presentations, hackathons and panels at conferences.</div></div><div class="mono">2023–2026</div></article>
 </section>
 
 </main>
